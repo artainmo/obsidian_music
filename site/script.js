@@ -6,6 +6,12 @@ const videoLinks = [
     'CJxxaY9mNH4',
 ];
 
+const music_file = `
+`;
+
+const study_file = `
+`
+
 let player;
 
 // YouTube API will call this function when the iframe API is ready
