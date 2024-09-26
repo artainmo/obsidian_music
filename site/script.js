@@ -1,25 +1,55 @@
 // List of video URLs
 const videoLinks = [
-    'https://www.youtube.com/watch?v=Ja9IUKElT5w',
-    'https://www.youtube.com/watch?v=Z9iXlT8kMLc',
-    'https://www.youtube.com/watch?v=bAVh9cFSnU0',
-    'https://www.youtube.com/watch?v=CJxxaY9mNH4',
+    'Ja9IUKElT5w',
+    'Z9iXlT8kMLc',
+    'bAVh9cFSnU0',
+    'CJxxaY9mNH4',
 ];
+
+let player;
+
+// YouTube API will call this function when the iframe API is ready
+function onYouTubeIframeAPIReady() {
+    loadRandomVideo();  // Load a random video initially
+}
 
 // Function to load a random video
 function loadRandomVideo() {
-    const videoPlayer = document.getElementById('videoPlayer');
-    const videoSource = document.getElementById('videoSource');
+	const randomIndex = Math.floor(Math.random() * videoLinks.length);
+    const videoId = videoLinks[randomIndex];
 
-    // Get a random index from the videoLinks array
-    const randomIndex = 2;
+	// Hide error message
+    document.getElementById('errorMessage').style.display = 'none';
 
-    // Set the new video source
-    videoSource.src = videoLinks[randomIndex];
-
-    // Load the new video
-    videoPlayer.load();
+    if (player) {
+		// We use the loadVideoById(videoId) method to change the video when a random video is selected
+        player.loadVideoById(videoId); 
+    } else {
+        // The YT.Player constructor creates an iframe that displays a YouTube video
+        player = new YT.Player('player', {
+            height: '450',
+            width: '800',
+            videoId: videoId,
+            events: {
+                'onStateChange': onPlayerStateChange,
+				'onError': onPlayerError
+            }
+        });
+    }
 }
 
-// Load a random video when the page first loads
-window.onload = loadRandomVideo;
+// This function triggers when the video state changes
+function onPlayerStateChange(event) {
+    // Check if the video ended
+    if (event.data === YT.PlayerState.ENDED) {
+        loadRandomVideo();  // Load a new random video when the previous one ends
+    }
+}
+
+// This function triggers when there's an error
+function onPlayerError(event) {
+    // Show error message if embedding is not possible with the video
+    if (event.data === 101 || event.data === 150) {
+    	document.getElementById('errorMessage').style.display = 'flex';
+    }
+}

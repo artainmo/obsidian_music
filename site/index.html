@@ -8,16 +8,18 @@
 	</head>
 	<body>
 		<h1>Random Video Display</h1>
-		<!-- Video Element -->
-		<video id="videoPlayer" controls>
-        	<source id="videoSource" src="" type="video/mp4">
-        	Your browser does not support the video tag.
-		</video>
+		<!-- Iframe for YouTube video -->
+		<div id="player"></div>
+
+		<!-- Error message if video cannot be loaded -->
+    	<div id="errorMessage">This video is not available for embedding. Please change the Obsidian link.</div>
 
    		<!-- Button to load a new random video -->
     	<button onclick="loadRandomVideo()">Another One</button>
 
 		<!-- Link to the JavaScript file -->
     	<script src="script.js"></script>
+		<!-- We load the YouTube iframe API script -->
+		<script src="https://www.youtube.com/iframe_api"></script>
 	</body>
 </html>
