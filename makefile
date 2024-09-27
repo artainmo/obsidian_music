@@ -5,9 +5,12 @@ build: # build to add music files in static javascript website
 	sed '/const study_file = `/r site/data/study.md' dist/tmp.js > dist/script.js
 	rm -rf dist/tmp.js
 	cp site/index.html dist/index.html
+	cp site/style.css dist/style.css
 
-obsidian_update: # update obsidian to have latest music files
+update: # update obsidian to have latest music files
 	git submodule update --remote # Git knows what to update thanks to the .gitmodules file
 	git add .
 	git commit -m "Automatically update submodule to latest versions"
 	git push
+
+.PHONY: build update
