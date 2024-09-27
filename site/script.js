@@ -1,32 +1,6 @@
 const study_file = `
-#music #list #study
-# Music for studying or working
-For studying/working, the best music contains no text, instruments increase arousal which can help with motivation to study and the lack of text prevents or limits distractions. Music can also hide external distracting noises.
-For difficult work dark noise may be best by being the least distracting but when work is less difficult beats may provide more motivation to work for longer.
-#### Less engaging music is better for deep focus
-IOS app - Dark Noise
-[karamel kel - aglow (intro) (slowed) (1 hour loop)](https://www.youtube.com/watch?v=5JTkoA3dQ1g)
-[Rain Sound On Window with Thunder Sounds](https://www.youtube.com/watch?v=mPZkdNFkNps)
-[you look lonely, i can fix that... (1 hour loop)](https://www.youtube.com/watch?v=me10_opDug0)
-[what it feels like to be a memory (playlist)](https://www.youtube.com/watch?v=MVeeRCRw5kM)
-[calm your heart.](https://www.youtube.com/watch?v=1R47EQrxgfw)
-[Ambient Study Music To Concentrate](https://www.youtube.com/watch?v=sjkrrmBnpGE)
-#### More engaging music is better for work motivation
-[lofi hip hop radio 📚 - beats to relax/study to](https://www.youtube.com/watch?v=jfKfPfyJRdk)
-[Zane98 - beats - playlist](https://www.youtube.com/watch?v=y2OsiWkaIac&list=PLotOMRMf4Mno0TEAMLosoqPq-8FMaqSZh)
-
 `
 const music_file = `
-#music #list
-
-# Pleasant music
-I like all sorts of music depending on variable mood. I do not like sharing the music I listen to as it exposes my mood.
-
-TODO: Find more music => phone => music => file organizer (make selection of them, remove 'la smala' for example)
-
-https://www.youtube.com/watch?v=Ja9IUKElT5w
-https://www.youtube.com/watch?v=Z9iXlT8kMLc
-https://www.youtube.com/watch?v=bAVh9cFSnU0
 `;
 let music_list = []
 let engaged_study_list = []
