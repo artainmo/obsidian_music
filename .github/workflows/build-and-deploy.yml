@@ -1,6 +1,7 @@
 name: Build and Deploy to GitHub Pages
 
 on:
+  workflow_dispatch: # This allows manual execution of the workflow.
   push:
     branches:
       - main  # Triggers on push to the 'main' branch.
