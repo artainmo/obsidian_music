@@ -104,25 +104,15 @@ async function video(videoId, url) {
 		}
 		return ;
 	}
-    if (player) {
-		if (!url.includes("list=")) {	
-			// We use the loadVideoById(videoId) method to change the video when a random video is selected
-        	player.loadVideoById(videoId); 
-		} else {
-			player.loadPlaylist({
-        		list: videoId,  // Pass the playlist ID here
-        		listType: 'playlist',  // Explicitly state the type of the list
-        		index: 0,  // Start from the first video in the playlist
-    		});
-		}
-	    document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title to know what video you are waiting for during ads
-    } else {
-		if (!url.includes("list=")) {	
+	if (!url.includes("list=")) {	
         	// The YT.Player constructor creates an iframe that displays a YouTube video
         	player = new YT.Player('player', {
             	height: '450',
             	width: '800',
             	videoId: videoId,
+		playerVars: {
+        		'autoplay': 1
+		}
             	events: {
                 	'onStateChange': onPlayerStateChange,
 					'onError': onPlayerError,
@@ -132,13 +122,14 @@ async function video(videoId, url) {
 			} 
             	}
         	});
-		} else {
+	} else {
 			player = new YT.Player('player', {
         		height: '450',
         		width: '800',
         		playerVars: {
-            		listType: 'playlist',
-            		list: videoId
+            			listType: 'playlist',
+            			list: videoId,
+				'autoplay': 1
         		},
         		events: {
             		'onStateChange': onPlayerStateChange,
@@ -149,8 +140,7 @@ async function video(videoId, url) {
 			} 
         		}
     		});
-		}
-    }
+	}
 }
 
 function another_video() {
