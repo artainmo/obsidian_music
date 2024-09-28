@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0 # Ensures that all commit history is fetched. Sometimes, a shallow clone can cause issues with submodules, so this ensures that full commit history is available for both the main repository and submodules.
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use personal access token, to enable private repository access, created in 'developer settings' and referenced in 'secrets and variables' of this repository.
     
-      - name: Set up Git user name and email
+      - name: Set up Git user name and email to allow push in subsequent step.
       run: |
         git config --local user.name "Arthur Tainmont"
         git config --local user.email "tainmontarthur@icloud.com"
