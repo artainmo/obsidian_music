@@ -69,7 +69,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function previous_video() {
-	history.pop();
+	if (history.length > 1) { history.pop(); }
 	url = history.at(-1);
 	video(extractVideoID(url), url);
 }
