@@ -16,7 +16,7 @@ jobs:
 
       # Step 2: Run 'make build' to create the distributable version in dist from site.
       - name: Run make build
-        run: 
+        run: |
           ls
           ls Obsidian
           ls Obsidian/Obsidian
