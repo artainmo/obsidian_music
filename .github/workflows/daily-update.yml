@@ -1,7 +1,7 @@
 name: Daily Make Update
 
 on: 
-  workflow_dispatch:
+  workflow_dispatch: # This allows manual execution of the workflow.
   schedule:
     - cron: "0 0 * * *"  # Runs every day at midnight UTC.
 
