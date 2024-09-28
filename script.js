@@ -1125,7 +1125,6 @@ function setMode() {
 
 // YouTube API will call this function when the iframe API is ready
 function onYouTubeIframeAPIReady() {
-    console.log("start")
     loadRandomVideo();  // Load a random video initially
 }
 
@@ -1156,7 +1155,6 @@ async function loadRandomVideo() {
 		return ;
 	}
     if (player) {
-	    console.log("start0")
 		if (!music[randomIndex].includes("list=")) {	
 			// We use the loadVideoById(videoId) method to change the video when a random video is selected
         	player.loadVideoById(videoId); 
@@ -1168,7 +1166,6 @@ async function loadRandomVideo() {
     		});
 		}
     } else {
-	    	console.log("start1")
 		if (!music[randomIndex].includes("list=")) {	
         	// The YT.Player constructor creates an iframe that displays a YouTube video
         	player = new YT.Player('player', {
@@ -1197,6 +1194,11 @@ async function loadRandomVideo() {
 			player.mute();
 		}
     }
+}
+
+function another_video() {
+	player.mute();
+	loadRandomVideo();
 }
 
 // This function triggers when the video state changes
