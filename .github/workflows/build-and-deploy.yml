@@ -16,7 +16,11 @@ jobs:
 
       # Step 2: Run 'make build' to create the distributable version in dist from site.
       - name: Run make build
-        run: make build
+        run: 
+          ls
+          ls Obsidian
+          ls Obsidian/Obsidian
+          make build
 
       # Step 3: Deploy the 'dist' directory to GitHub Pages (gh-pages branch).
       - name: Deploy to GitHub Pages
