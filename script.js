@@ -21,9 +21,6 @@ const music_file = `
 #music #list 
 
 # Pleasant music
-I like all sorts of music depending on variable mood. I do not like sharing the music I listen to as it exposes my mood.
-
-TODO: Find more music => phone => music => file organizer (make selection of them, remove 'la smala' for example)
 
 https://www.youtube.com/watch?v=Ja9IUKElT5w
 https://www.youtube.com/watch?v=Z9iXlT8kMLc
