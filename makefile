@@ -6,6 +6,7 @@ build: # build to add music files in static javascript website
 	rm -rf dist/tmp.js
 	cp site/index.html dist/index.html
 	cp site/style.css dist/style.css
+	cp site/favicon.png dist/favicon.png
 
 update: # update obsidian to have latest music files
 	git submodule update --remote # Git knows what to update thanks to the .gitmodules file
