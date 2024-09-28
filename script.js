@@ -1175,10 +1175,10 @@ async function loadRandomVideo() {
             	videoId: videoId,
             	events: {
                 	'onStateChange': onPlayerStateChange,
-					'onError': onPlayerError
+					'onError': onPlayerError,
+			'onReady': function(event) { event.target.mute(); } // Mute the add for first video
             	}
         	});
-			player.mute();
 		} else {
 			player = new YT.Player('player', {
         		height: '450',
@@ -1189,10 +1189,10 @@ async function loadRandomVideo() {
         		},
         		events: {
             		'onStateChange': onPlayerStateChange,
-            		'onError': onPlayerError
+            		'onError': onPlayerError,
+			'onReady': function(event) { event.target.mute(); } // Mute the add for first video
         		}
     		});
-			player.mute();
 		}
     }
 }
