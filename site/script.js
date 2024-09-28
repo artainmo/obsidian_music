@@ -155,9 +155,9 @@ function onPlayerStateChange(event) {
 	return ;
     }
 
-    // Unmute the video when the content starts playing
-    if (event.data === YT.PlayerState.PLAYING && player.isMuted()) {
-        player.unMute();  // Unmute the video once the content starts
+    if (event.data === YT.PlayerState.PLAYING) {
+        if (player.isMuted()) { player.unMute(); } // Unmute the video once the content starts
+        document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title for playlist videos
 	return ;
     }
 }
