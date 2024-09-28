@@ -3,6 +3,7 @@ name: Daily Make Update
 on:
   schedule:
     - cron: "0 0 * * *"  # Runs every day at midnight UTC.
+  workflow_dispatch:
 
 jobs:
   update:
