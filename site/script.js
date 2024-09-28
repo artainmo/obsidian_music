@@ -54,6 +54,7 @@ function parse() {
 let player;
 let mode = 'Recreational';
 let bug = false;
+let history = []
 
 function setMode() {
 	const dropdown = document.getElementById("dropdown");
@@ -67,6 +68,12 @@ function onYouTubeIframeAPIReady() {
     loadRandomVideo();  // Load a random video initially
 }
 
+function previous_video() {
+	history.pop();
+	url = history.at(-1);
+	video(extractVideoID(url), url);
+}
+
 // Function to load a random video
 async function loadRandomVideo() {
 	bug = false;
@@ -78,14 +85,17 @@ async function loadRandomVideo() {
 	}
 	const randomIndex = Math.floor(Math.random() * music.length);
     const videoId = extractVideoID(music[randomIndex]);
+	history.push(music[randomIndex]);
+    video(videoId, music[randomIndex]);
+}
 
+function video(videoId, url) {
 	// Hide error message
     document.getElementById('errorMessage1').style.display = 'none';
     document.getElementById('errorMessage2').style.display = 'none';
-
 	if (videoId === null) {
 		bug = true;
-		console.log(`Error: could not extract ID of ${music[randomIndex]}`)
+		console.log(`Error: could not extract ID of ${url}`)
     	document.getElementById('errorMessage2').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
@@ -94,7 +104,7 @@ async function loadRandomVideo() {
 		return ;
 	}
     if (player) {
-		if (!music[randomIndex].includes("list=")) {	
+		if (!url.includes("list=")) {	
 			// We use the loadVideoById(videoId) method to change the video when a random video is selected
         	player.loadVideoById(videoId); 
 		} else {
@@ -104,8 +114,9 @@ async function loadRandomVideo() {
         		index: 0,  // Start from the first video in the playlist
     		});
 		}
+	    document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title to know what video you are waiting for during ads
     } else {
-		if (!music[randomIndex].includes("list=")) {	
+		if (!url.includes("list=")) {	
         	// The YT.Player constructor creates an iframe that displays a YouTube video
         	player = new YT.Player('player', {
             	height: '450',
@@ -114,7 +125,10 @@ async function loadRandomVideo() {
             	events: {
                 	'onStateChange': onPlayerStateChange,
 					'onError': onPlayerError,
-			'onReady': function(event) { event.target.mute(); } // Mute the add for first video
+			'onReady': function(event) { 
+				event.target.mute(); // Mute the add for first video
+				document.getElementById('video_title').innerHTML = event.target.getVideoData().title; // Set video title to know what video you are waiting for during ads
+			} 
             	}
         	});
 		} else {
@@ -128,7 +142,10 @@ async function loadRandomVideo() {
         		events: {
             		'onStateChange': onPlayerStateChange,
             		'onError': onPlayerError,
-			'onReady': function(event) { event.target.mute(); } // Mute the add for first video
+			'onReady': function(event) { 
+				event.target.mute(); // Mute the add for first video
+				document.getElementById('video_title').innerHTML = event.target.getVideoData().title; // Set video title to know what video you are waiting for during ads
+			} 
         		}
     		});
 		}
