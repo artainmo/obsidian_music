@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive web disign -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+    	<title>Obsidian Music</title>
+	</head>
+	<body>
+		<h1>Obsidian Music</h1>
+		
+   		<!-- Button to load a new random video -->
+    	<button onclick="loadRandomVideo()">Another One</button>
+
+		<!-- Iframe for YouTube video -->
+		<br><div id="player"></div><br>
+
+		<!-- Dropdown Menu To Select Mode -->
+    	<select id="dropdown" onchange="setMode()">
+        	<option value="Recreational">Recreational</option>
+        	<option value="Engaged Study">Engaged Study</option>
+        	<option value="Focused Study">Focused Study</option>
+    	</select>
+
+		<!-- Error message if video cannot be loaded -->
+    	<div id="errorMessage1">This video is not available for embedding. Please change the Obsidian link.</div>
+		<!-- Error message if video ID extraction failed -->
+    	<div id="errorMessage2">Video ID extraction failed. Look at concole for debugging.</div>
+
+		<!-- Link to the JavaScript file -->
+    	<script src="script.js"></script>
+		<!-- We load the YouTube iframe API script -->
+		<script src="https://www.youtube.com/iframe_api"></script>
+	</body>
+</html>

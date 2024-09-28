@@ -1,0 +1,76 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 3em;
+    color: #1e2a39; /* Darker shade for the title */
+    margin-bottom: 20px;
+}
+
+/* Dropdown Menu styling */
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Button styling */
+button {
+    background-color: #1e90ff; /* Bright blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #4682b4; /* Slightly darker blue on hover */
+}
+
+/* YouTube video iframe container */
+#player {
+    width: 100%;
+    max-width: 640px; /* Limit the video width */
+    margin: 20px auto; /* Center the video */
+    padding: 0;
+}
+
+/* Error message styles */
+#errorMessage1, #errorMessage2 {
+    color: #ff4d4d; /* Red color for errors */
+    font-weight: bold;
+    margin: 10px auto; /* Center the error messages with auto margins */
+    display: none; /* Initially hidden, assuming JavaScript shows them when needed */
+    text-align: center; /* Center text inside the message box */
+    max-width: 80%; /* Prevent the error message from being too wide */
+    padding: 10px; /* Add some padding around the text */
+    background-color: #ffe6e6; /* Light red background for better visibility */
+    border: 1px solid #ff4d4d; /* Red border to match text color */
+    border-radius: 5px; /* Slightly rounded corners */
+
+	/* Flexbox to center text vertically and horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 50px; /* Ensure the box has some height */
+}
