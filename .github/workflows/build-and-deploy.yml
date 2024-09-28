@@ -1,0 +1,26 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Triggers on push to the 'main' branch.
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Ubuntu is generally faster and more cost-efficient for GitHub to run, making it the default choice. For most projects, Linux (Ubuntu) will work just fine even if developed on macOS.
+
+    steps:
+      # Step 1: Download the GitHub repository’s source code to the runner (the virtual machine where the action is being executed). Without this step, the subsequent steps wouldn't have access to the repository's code.
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      # Step 2: Run 'make build' to create the distributable version in dist from site.
+      - name: Run make build
+        run: make build
+
+      # Step 3: Deploy the 'dist' directory to GitHub Pages (gh-pages branch).
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # The action used to deploy to the 'gh-pages' branch. You’ll need to configure GitHub Pages to use the 'gh-pages' branch in the repository settings.
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically creates a special access token called 'GITHUB_TOKEN' for each workflow run. This token allows the workflow to interact with the GitHub API. The syntax secrets.GITHUB_TOKEN is a way to reference this token securely in the workflow.
+          publish_dir: ./dist  # Directory to deploy (dist directory).
