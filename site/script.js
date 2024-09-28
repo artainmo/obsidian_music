@@ -143,6 +143,7 @@ async function video(videoId, url) {
 }
 
 function another_video() {
+	player.destroy()
 	loadRandomVideo();
 }
 
