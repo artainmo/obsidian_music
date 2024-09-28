@@ -52,6 +52,7 @@ button:hover {
     width: 100%;
     max-width: 640px; /* Limit the video width */
     margin: 20px auto; /* Center the video */
+    margin-top: -10px;
     padding: 0;
 }
 
@@ -73,4 +74,8 @@ button:hover {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     min-height: 50px; /* Ensure the box has some height */
+}
+
+#video_title {
+    margin-top: 20px;
 }
