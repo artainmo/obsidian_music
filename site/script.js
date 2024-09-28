@@ -18,7 +18,7 @@ function extractVideoID(url) {
   		const match = url.match(regex);
   
   		// If found, return the playlist ID, otherwise return null
-		console.log(`Playlist: ${match[1]}`)
+		// console.log(`Playlist: ${match[1]}`)
   		return match ? match[1] : null;
 	}
 	if (url.includes("list=")) {
@@ -157,7 +157,7 @@ function onPlayerStateChange(event) {
 
     if (event.data === YT.PlayerState.PLAYING) {
         if (player.isMuted()) { player.unMute(); } // Unmute the video once the content starts
-        document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title for playlist videos
+        //document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title for playlist videos
 	return ;
     }
 }
