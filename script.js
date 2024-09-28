@@ -1191,6 +1191,7 @@ async function loadRandomVideo() {
         		}
     		});	
 		}
+	    	player.mute();  // Mute the ad of first video
     }
 }
 
@@ -1198,14 +1199,8 @@ async function loadRandomVideo() {
 function onPlayerStateChange(event) {
     // Check if the video ended
     if (event.data === YT.PlayerState.ENDED) {
+	player.mute();  // Mute the ad
         loadRandomVideo();  // Load a new random video when the previous one ends
-	return ;
-    }
-
-    // Check if an ad starts playing
-    if (event.data === YT.PlayerState.AD_PLAYING) {
-        player.mute();  // Mute the ad
-        //checkForSkipButton();  // Check if the ad is skippable
 	return ;
     }
 
@@ -1224,6 +1219,7 @@ async function onPlayerError(event) {
     	document.getElementById('errorMessage1').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
+			player.mute();  // Mute the ad
 			loadRandomVideo()
 		}
     }
