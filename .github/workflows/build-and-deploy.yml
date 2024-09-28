@@ -24,7 +24,7 @@ jobs:
 
       # Step 3: Deploy the 'dist' directory to GitHub Pages (gh-pages branch).
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4 # The action used to deploy to the 'gh-pages' branch. You’ll need to configure GitHub Pages to use the 'gh-pages' branch in the repository settings.
+        uses: peaceiris/actions-gh-pages@v4 # The action used to deploy to the 'gh-pages' branch. You’ll need to configure GitHub Pages to use the 'gh-pages' branch in the repository settings. (Repository -> Settings -> Pages -> Source -> Select 'gh-pages')
         with:
           github_token: ${{ secrets.LAUNCH_GITHUB_PAGES_FROM_WORKFLOW }} # This token allows the workflow to interact with the GitHub API. The token is defined in this repo settings -> secrets and variables -> actions.
           publish_dir: ./dist  # Directory to deploy (dist directory).
