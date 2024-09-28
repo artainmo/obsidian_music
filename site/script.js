@@ -60,7 +60,6 @@ function setMode() {
 	const dropdown = document.getElementById("dropdown");
 	mode = dropdown.value;
 	history = []
-	player.mute()
 	loadRandomVideo()
 }
 
@@ -117,7 +116,7 @@ async function video(videoId, url) {
                 	'onStateChange': onPlayerStateChange,
 					'onError': onPlayerError,
 			'onReady': function(event) { 
-				event.target.mute(); // Mute the add for first video
+				event.target.mute(); // Mute the ad for first video
 				document.getElementById('video_title').innerHTML = event.target.getVideoData().title; // Set video title to know what video you are waiting for during ads
 			} 
             	}
@@ -135,7 +134,7 @@ async function video(videoId, url) {
             		'onStateChange': onPlayerStateChange,
             		'onError': onPlayerError,
 			'onReady': function(event) { 
-				event.target.mute(); // Mute the add for first video
+				event.target.mute(); // Mute the ad for first video
 				document.getElementById('video_title').innerHTML = event.target.getVideoData().title; // Set video title to know what video you are waiting for during ads
 			} 
         		}
@@ -144,7 +143,6 @@ async function video(videoId, url) {
 }
 
 function another_video() {
-	player.mute();
 	loadRandomVideo();
 }
 
@@ -152,7 +150,6 @@ function another_video() {
 function onPlayerStateChange(event) {
     // Check if the video ended
     if (event.data === YT.PlayerState.ENDED) {
-	player.mute();  // Mute the ad
         loadRandomVideo();  // Load a new random video when the previous one ends
 	return ;
     }
@@ -172,7 +169,6 @@ async function onPlayerError(event) {
     	document.getElementById('errorMessage1').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
-			player.mute();  // Mute the ad
 			loadRandomVideo()
 		}
     }
