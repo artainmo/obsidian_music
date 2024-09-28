@@ -1174,7 +1174,7 @@ async function video(videoId, url) {
             	videoId: videoId,
 		playerVars: {
         		'autoplay': 1
-		}
+		},
             	events: {
                 	'onStateChange': onPlayerStateChange,
 					'onError': onPlayerError,
