@@ -9,13 +9,19 @@ jobs:
     runs-on: ubuntu-latest # Ubuntu is generally faster and more cost-efficient for GitHub to run, making it the default choice. For most projects, Linux (Ubuntu) will work just fine even if developed on macOS.
 
     steps:
-      # Step 1: Download the GitHub repository’s source code to the runner (the virtual machine where the action is being executed). Without this step, the subsequent steps wouldn't have access to the repository's code.
+       # Step 1: Set up SSH to clone private submodule in next step.
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }} # This refers to the key named 'SSH_PRIVATE_KEY' created in private Obsidian repository -> settings -> secrets and variables -> actions.
+
+      # Step 2: Download the GitHub repository’s source code to the runner (the virtual machine where the action is being executed). Without this step, the subsequent steps wouldn't have access to the repository's code.
       - name: Checkout the repository
         uses: actions/checkout@v3
         with:
           submodules: true  # This will initialize and update submodules.
           fetch-depth: 0 # Ensures that all commit history is fetched. Sometimes, a shallow clone can cause issues with submodules, so this ensures that full commit history is available for both the main repository and submodules.
 
-      # Step 2: Run 'make update' to update the obsidian repository and push.
+      # Step 3: Run 'make update' to update the obsidian repository and push.
       - name: Run make update
         run: make update
