@@ -17,6 +17,11 @@ jobs:
           submodules: true  # This will initialize and update submodules.
           fetch-depth: 0 # Ensures that all commit history is fetched. Sometimes, a shallow clone can cause issues with submodules, so this ensures that full commit history is available for both the main repository and submodules.
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use personal access token, to enable private repository access, created in 'developer settings' and referenced in 'secrets and variables' of this repository.
+    
+      - name: Set up Git user name and email
+      run: |
+        git config --local user.name "Arthur Tainmont"
+        git config --local user.email "tainmontarthur@icloud.com"
 
       # Step 2: Run 'make update' to update the obsidian repository and push.
       - name: Run make update
