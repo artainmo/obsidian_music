@@ -75,7 +75,7 @@ function previous_video() {
 }
 
 // Function to load a random video
-async function loadRandomVideo() {
+function loadRandomVideo() {
 	bug = false;
 	let music = music_list;
 	if (mode === "Focused Study") {
@@ -89,7 +89,7 @@ async function loadRandomVideo() {
     video(videoId, music[randomIndex]);
 }
 
-function video(videoId, url) {
+async function video(videoId, url) {
 	// Hide error message
     document.getElementById('errorMessage1').style.display = 'none';
     document.getElementById('errorMessage2').style.display = 'none';
