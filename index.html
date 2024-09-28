@@ -9,10 +9,13 @@
 	</head>
 	<body>
 		<h1>Obsidian Music</h1>
-		
-   		<!-- Button to load a new random video -->
-    	<button onclick="another_video()">Another One</button>
 
+			<!-- Button to go to previous video -->
+    	<button onclick="previous_video()">Back</button>
+   		<!-- Button to load a new random video -->
+    	<button onclick="another_video()">Next</button><br>
+
+		<div id="video_title"></div>
 		<!-- Iframe for YouTube video -->
 		<br><div id="player"></div><br>
 
