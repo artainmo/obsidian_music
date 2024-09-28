@@ -13,6 +13,9 @@ jobs:
       # Step 1: Download the GitHub repository’s source code to the runner (the virtual machine where the action is being executed). Without this step, the subsequent steps wouldn't have access to the repository's code.
       - name: Checkout the repository
         uses: actions/checkout@v3
+        with:
+          submodules: true  # This will initialize and update submodules.
+          fetch-depth: 0 # Ensures that all commit history is fetched. Sometimes, a shallow clone can cause issues with submodules, so this ensures that full commit history is available for both the main repository and submodules.
 
       # Step 2: Run 'make build' to create the distributable version in dist from site.
       - name: Run make build
