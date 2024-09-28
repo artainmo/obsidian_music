@@ -58,6 +58,7 @@ let bug = false;
 function setMode() {
 	const dropdown = document.getElementById("dropdown");
 	mode = dropdown.value;
+	player.mute()
 	loadRandomVideo()
 }
 
