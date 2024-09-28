@@ -1199,6 +1199,20 @@ function onPlayerStateChange(event) {
     // Check if the video ended
     if (event.data === YT.PlayerState.ENDED) {
         loadRandomVideo();  // Load a new random video when the previous one ends
+	return ;
+    }
+
+    // Check if an ad starts playing
+    if (event.data === YT.PlayerState.AD_PLAYING) {
+        player.mute();  // Mute the ad
+        //checkForSkipButton();  // Check if the ad is skippable
+	return ;
+    }
+
+    // Unmute the video when the content starts playing
+    if (event.data === YT.PlayerState.PLAYING && !player.isMuted()) {
+        player.unMute();  // Unmute the video once the content starts
+	return ;
     }
 }
 
