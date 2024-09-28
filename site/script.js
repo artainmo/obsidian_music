@@ -118,6 +118,7 @@ async function loadRandomVideo() {
 					'onError': onPlayerError
             	}
         	});
+			player.mute();
 		} else {
 			player = new YT.Player('player', {
         		height: '450',
@@ -130,9 +131,9 @@ async function loadRandomVideo() {
             		'onStateChange': onPlayerStateChange,
             		'onError': onPlayerError
         		}
-    		});	
+    		});
+			player.mute();
 		}
-	    	console.log("start2")
     }
 }
 
