@@ -103,6 +103,7 @@ async function video(videoId, url) {
 		}
 		return ;
 	}
+	if (player) { player.destroy(); }
 	if (!url.includes("list=")) {	
         	// The YT.Player constructor creates an iframe that displays a YouTube video
         	player = new YT.Player('player', {
@@ -143,7 +144,6 @@ async function video(videoId, url) {
 }
 
 function another_video() {
-	player.destroy()
 	loadRandomVideo();
 }
 
