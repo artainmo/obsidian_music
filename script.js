@@ -1121,6 +1121,7 @@ let history = []
 function setMode() {
 	const dropdown = document.getElementById("dropdown");
 	mode = dropdown.value;
+	history = []
 	player.mute()
 	loadRandomVideo()
 }
