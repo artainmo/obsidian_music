@@ -12,7 +12,7 @@ IOS app - Dark Noise
 [calm your heart.](https://www.youtube.com/watch?v=1R47EQrxgfw)
 [Ambient Study Music To Concentrate](https://www.youtube.com/watch?v=sjkrrmBnpGE)
 #### More engaging music is better for work motivation
-[lofi hip hop radio 📚 - beats to relax/study to](https://www.youtube.com/watch?v=jfKfPfyJRd)
+[lofi hip hop radio 📚 - beats to relax/study to](https://www.youtube.com/watch?v=jfKfPfyJRdk)
 [Zane98 - beats - playlist](https://www.youtube.com/watch?v=y2OsiWkaIac&list=PLotOMRMf4Mno0TEAMLosoqPq-8FMaqSZh)
 [izzamuzzic - Slow Mix 5 (Slowed to Perfection Mix 2021)](https://www.youtube.com/watch?v=g9pkKnPkksM)
 [izzamuzzic - Slow Mix (Slowed to Perfection Mix 2020)](https://www.youtube.com/watch?v=vCGYOX3YNuM&t=1062s)
@@ -76,7 +76,9 @@ https://www.youtube.com/watch?v=oXEf2DK7I1s
 https://www.youtube.com/watch?v=xR1IFU5x-ng
 https://www.youtube.com/watch?v=vQfTPbAaSjk
 https://www.youtube.com/watch?v=nhw3I_zOKts
+https://www.youtube.com/watch?v=lhGl9D514Bc
 https://www.youtube.com/watch?v=4Im48GY7gSo
+https://www.youtube.com/watch?v=CIqiB9zSLmM
 https://www.youtube.com/watch?v=aiCCl_IB8Ew
 https://www.youtube.com/watch?v=41NqrsMtfbw
 https://www.youtube.com/watch?v=7ahI0nMSOXo
@@ -911,7 +913,6 @@ https://www.youtube.com/watch?v=szIDM99kRNM
 https://www.youtube.com/watch?v=Jw81bRYUzVM
 https://www.youtube.com/watch?v=YthChN1Wq8M
 https://www.youtube.com/watch?v=h4ztBHLn1cA
-https://m.youtube.com/watch?v=5AEkC5rDO_c
 https://www.youtube.com/watch?v=Y8jHLER_w8s
 https://www.youtube.com/watch?v=yKp61LI_CWc
 https://www.youtube.com/watch?v=iD3rOICCfS8
