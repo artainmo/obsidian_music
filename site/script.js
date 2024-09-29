@@ -132,7 +132,7 @@ async function video(videoId, url) {
         		playerVars: {
             			listType: 'playlist',
             			list: videoId,
-				index: playlist_index,  // Specify the starting video (0-based index)
+				index: playlist_index + 1,  // Specify the starting video (1-based index)
 				'autoplay': 1
         		},
         		events: {
@@ -158,7 +158,7 @@ function onPlayerStateChange(event) {
 	currentIndex = player.getPlaylistIndex();  // Get the current index in the playlist
 	if (currentIndex !== -1 && currentIndex !== playlist_index) {
 		playlist_index = currentIndex;
-		video(extractVideoID(history.at(-1)), history.at(-1));
+		video(extractVideoID(history.at(-1)), history.at(-1)); //Reload next video playlist to display title and handle ads
 	}
 
     // Check if the video ended
