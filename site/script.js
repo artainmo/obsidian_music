@@ -170,22 +170,9 @@ function onPlayerStateChange(event) {
 
     if (event.data === YT.PlayerState.PLAYING) {
         if (player.isMuted()) { player.unMute(); } // Unmute the video once the content starts
-        //document.getElementById('video_title').innerHTML = player.getVideoData().title; // Set video title for playlist videos
 	return ;
     }
 }
-
-// Function to get and log the video duration and current time every 2 seconds
-function checkVideoStatus() {
-    const duration = player.getDuration(); // Total duration of the video
-    const currentTime = player.getCurrentTime(); // Current time in the video
-    
-    console.log(`Video Duration: ${duration} seconds | While muted: ${player.isMuted()}`);
-    console.log(`Current Time: ${currentTime} seconds | While muted: ${player.isMuted()}`);
-}
-
-// Set an interval to run the function every 2 seconds (2000 milliseconds)
-const intervalId = setInterval(checkVideoStatus, 2000);
 
 // This function triggers when there's an error
 async function onPlayerError(event) {
