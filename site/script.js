@@ -157,7 +157,7 @@ function onPlayerStateChange(event) {
 		
 	currentIndex = player.getPlaylistIndex();  // Get the current index in the playlist
 	if (currentIndex !== -1 && currentIndex !== playlist_index) {
-		playlist_index += 1;
+		playlist_index = currentIndex;
 		video(extractVideoID(history.at(-1)), history.at(-1));
 	}
 
