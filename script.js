@@ -1118,10 +1118,12 @@ let player;
 let mode = 'Recreational';
 let bug = false;
 let history = []
+let playlist_index = 0;
 
 function setMode() {
 	const dropdown = document.getElementById("dropdown");
 	mode = dropdown.value;
+	let playlist_index = 0;
 	history = []
 	loadRandomVideo()
 }
@@ -1132,6 +1134,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function previous_video() {
+	let playlist_index = 0;
 	if (history.length > 1) { history.pop(); }
 	url = history.at(-1);
 	video(extractVideoID(url), url);
@@ -1167,7 +1170,7 @@ async function video(videoId, url) {
 		return ;
 	}
 	if (player) { player.destroy(); }
-	if (!url.includes("list=")) {	
+	if (!url.includes("list=")) {
         	// The YT.Player constructor creates an iframe that displays a YouTube video
         	player = new YT.Player('player', {
             	height: '450',
@@ -1192,6 +1195,7 @@ async function video(videoId, url) {
         		playerVars: {
             			listType: 'playlist',
             			list: videoId,
+				index: playlist_index,  // Specify the starting video (0-based index)
 				'autoplay': 1
         		},
         		events: {
@@ -1207,13 +1211,22 @@ async function video(videoId, url) {
 }
 
 function another_video() {
+	let playlist_index = 0;
 	loadRandomVideo();
 }
 
 // This function triggers when the video state changes
 function onPlayerStateChange(event) {
+		
+	currentIndex = player.getPlaylistIndex();  // Get the current index in the playlist
+	if (currentIndex !== -1 && currentIndex !== playlist_index) {
+		playlist_index += 1;
+		video(extractVideoID(history.at(-1)), history.at(-1));
+	}
+
     // Check if the video ended
     if (event.data === YT.PlayerState.ENDED) {
+	let playlist_index = 0;
         loadRandomVideo();  // Load a new random video when the previous one ends
 	return ;
     }
@@ -1233,7 +1246,7 @@ async function onPlayerError(event) {
     	document.getElementById('errorMessage1').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
-			loadRandomVideo()
+			another_video();
 		}
     }
 }
