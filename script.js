@@ -1250,4 +1250,14 @@ async function onPlayerError(event) {
     }
 }
 
+setInterval(() => {
+    console.log("interval");
+    // Look for the "Skip Ad" button by its CSS class (the class name may change over time)
+    const skipButton = document.querySelector('.ytp-skip-ad-button');
+    if (skipButton) {
+        skipButton.click(); // Simulate a click on the "Skip Ad" button
+        console.log('Ad skipped');
+    }
+}, 1000); // Check every second
+
 parse();
