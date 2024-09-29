@@ -8,9 +8,10 @@ Personal project. Git repository synchronized with obsidian submodule to take up
 4. Create a webpage that displays a random music video from obsidian’s music list consisting of links to music videos. Have a button to load another random video.
 5. Also have the ability to skip adds automatically.
    * This does seem possible. However I was able to mute ads.
-   * It may also be possible to automatically skip ads after 5 seconds or even refresh until such an ad is found. However, as youtube's language or control panel can change this seems complicated to setup and maintain while from personal experience I am not complaining about ad length as long as they are muted.
+   * It may also be possible to automatically skip ads after 5 seconds or even refresh until such an ad is found. However, as youtube's language or control panel can change this seems complicated to setup and maintain while from personal experience I am not complaining much about ad length as long as they are muted.
 6. If a video is unavailable due to embedding restrictions or ID extraction problems, display error message and wait 15 seconds before loading another video.
 7. Maybe create different music options, such as recreational, engaged study or focused study.
 8. Also handle a music playlist.
 9. Use css to improve looks of website.
-10. Create a button to go back to previous song. (Haven't done this yet, can still be added)
+10. Create a button to go back to previous song.
+11. Dislay song title during ads to know what song you are waiting for.
