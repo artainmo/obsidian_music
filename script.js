@@ -22,6 +22,7 @@ const music_file = `
 
 # Pleasant music
 
+https://www.youtube.com/watch?v=XKufETigTxU
 https://www.youtube.com/watch?v=NykZam9rcEs
 https://www.youtube.com/watch?v=Ja9IUKElT5w
 https://www.youtube.com/watch?v=Z9iXlT8kMLc
@@ -106,6 +107,7 @@ https://www.youtube.com/watch?v=2MWVuCsVdiw
 https://www.youtube.com/watch?v=JXYNYzaGIns
 https://www.youtube.com/watch?v=autZufInfMo
 https://www.youtube.com/watch?v=0SVaz8VWE84
+https://www.youtube.com/watch?v=kE7GE0oVaUY
 https://www.youtube.com/shorts/_i1hW34_LtE
 https://www.youtube.com/watch?v=fFrb3U_8VzI
 https://www.youtube.com/watch?v=70yQQSInAYU
