@@ -56,6 +56,7 @@ let mode = 'Recreational';
 let bug = false;
 let history = []
 let playlist_index = 0;
+let last_link = '';
 
 function setMode() {
 	const dropdown = document.getElementById("dropdown");
@@ -87,7 +88,8 @@ function loadRandomVideo() {
 		music = engaged_study_list;
 	}
 	const randomIndex = Math.floor(Math.random() * music.length);
-    const videoId = extractVideoID(music[randomIndex]);
+	last_link = music[randomIndex]
+    const videoId = extractVideoID(last_link);
 	history.push(music[randomIndex]);
     video(videoId, music[randomIndex]);
 }
@@ -98,7 +100,7 @@ async function video(videoId, url) {
     document.getElementById('errorMessage2').style.display = 'none';
 	if (videoId === null) {
 		bug = true;
-		console.log(`Error: could not extract ID of ${url}`)
+		document.getElementById('errorMessage2').textContent = `Video ID extraction failed. Please change the Obsidian link:\n${url}`;
     	document.getElementById('errorMessage2').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
@@ -179,6 +181,7 @@ async function onPlayerError(event) {
     // Show error message if embedding is not possible with the video
     if (event.data === 101 || event.data === 150) {
 		bug = true;
+		document.getElementById('errorMessage1').textContent = `This video is not available for embedding. Please change the Obsidian link:\n${last_link}`;
     	document.getElementById('errorMessage1').style.display = 'flex';
 		await new Promise(r => setTimeout(r, 15000));
 		if (bug) {
