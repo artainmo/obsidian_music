@@ -933,7 +933,6 @@ https://www.youtube.com/watch?v=h4ztBHLn1cA
 https://www.youtube.com/watch?v=Y8jHLER_w8s
 https://www.youtube.com/watch?v=yKp61LI_CWc
 https://www.youtube.com/watch?v=iD3rOICCfS8
-https://www.youtube.com/watch?v=zcU0fwZ2U1M
 https://www.youtube.com/watch?v=IxAUxtIlXQM
 https://www.youtube.com/watch?v=Ta-3VizBGtQ
 https://www.youtube.com/watch?v=B0u4OZHBQZY
@@ -973,7 +972,6 @@ https://www.youtube.com/watch?v=3qpt8Bouv6o
 https://www.youtube.com/watch?v=shS1BYOOiRA
 https://www.youtube.com/watch?v=52JRdlks1gE
 https://www.youtube.com/watch?v=8Tx3mehujbU
-https://www.youtube.com/watch?v=ch53oIM_SsU
 https://www.youtube.com/watch?v=vVzWVinJ5wQ
 https://www.youtube.com/watch?v=c2iZcaZabJw
 https://www.youtube.com/watch?v=U10WYWpcYIo
@@ -1081,7 +1079,64 @@ https://www.youtube.com/watch?v=59_7B54Hq38
 https://www.youtube.com/watch?v=kWTQTl3QtMY
 https://www.youtube.com/watch?v=VVnESQXxoiw
 https://www.youtube.com/watch?v=BKaGfOHmJJo
-https://www.youtube.com/watch?v=N5EvtKcDA2Q`;
+https://www.youtube.com/watch?v=N5EvtKcDA2Q
+# Some other recommendations from names
+dynmk
+MrSuicideSheep
+dreamscape
+Eminem
+Lil peep
+xxxtentacion
+2Scratch
+Black Atlas
+izzamusic
+Always never
+Breathe
+Prince of falls
+Aesthetic vibes
+Скриптонит
+letyoudown
+Lund
+Plaza
+pre kai ro
+\$uicideBoy\$
+SickickMusic
+Brennan Savage
+Ashkidd
+Neffex
+Chase Atlantic
+Lefa
+Damso
+Enrique Iglesias
+Lycos
+Izaid
+YUZMV
+Columbine
+PLK
+Lasco
+Sneazzy
+Nekfeu
+Django
+Freeze Corleone
+The Neighbourhood
+Witt Lowry
+Aaryan Shah
+Machine Gun Kelly
+Illenium MrMomMusic
+Gangster musicline
+Lana Del Ray
+snegovik
+Juice WRLD
+LAYLOW
+MGK
+Arusik Petrosyan
+Rauf & Faik
+zane98
+Coldsteeze
+Izzamuzzic
+BANKS
+Shilow Dynasty
+YouTube automated recommendations for music...`;
 let music_list = []
 let engaged_study_list = []
 let focused_study_list = []
