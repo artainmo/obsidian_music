@@ -1,5 +1,5 @@
 # obsidian_music
-Personal project. Git repository synchronized with obsidian submodule to take up-to-date music list and display it on website in a random order while silencing ads.
+Personal project. Git repository synchronized with obsidian submodule to take up-to-date music list and display it on website in a random order. Ads are silenced to expose an abuse risk in the youtube API.
 
 ## Steps to create
 1. Create a repo that is linked to a submodule of the Obsidian repo.
