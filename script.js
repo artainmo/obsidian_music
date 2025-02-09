@@ -53,6 +53,7 @@ https://www.youtube.com/watch?v=Ua9dGe-7YUI
 https://www.youtube.com/watch?v=Vmx41LjLmrA
 https://www.youtube.com/watch?v=vB-aoYXwndM
 https://www.youtube.com/watch?v=6ejhiF1Ci0c
+https://www.youtube.com/watch?v=9Q3hP0xukRY
 https://www.youtube.com/watch?v=6HNFGLCaVFI
 https://www.youtube.com/watch?v=Ujaa3ar4hCA
 https://www.youtube.com/watch?v=xFJjczkU4So
@@ -1137,6 +1138,7 @@ https://www.youtube.com/watch?v=kWTQTl3QtMY
 https://www.youtube.com/watch?v=VVnESQXxoiw
 https://www.youtube.com/watch?v=BKaGfOHmJJo
 https://www.youtube.com/watch?v=N5EvtKcDA2Q
+https://www.youtube.com/watch?v=R1kQnTLccmU
 # Some other recommendations from names
 dynmk
 MrSuicideSheep
@@ -1193,7 +1195,8 @@ Coldsteeze
 Izzamuzzic
 BANKS
 Shilow Dynasty
-YouTube automated recommendations for music...`;
+YouTube automated recommendations for music...
+`;
 let music_list = []
 let engaged_study_list = []
 let focused_study_list = []
