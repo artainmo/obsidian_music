@@ -230,6 +230,7 @@ https://www.youtube.com/watch?v=JRWox-i6aAk
 https://www.youtube.com/watch?v=9Ke4480MicU
 https://www.youtube.com/watch?v=O1J-WfYyUZI
 https://www.youtube.com/watch?v=_t4JHRqFIfU
+https://www.youtube.com/watch?v=SmM0653YvXU
 https://www.youtube.com/watch?v=KHjXmSRYcGU
 https://www.youtube.com/watch?v=lUn7OUDcocQ
 https://www.youtube.com/watch?v=AcapISVbCOM
@@ -1220,6 +1221,7 @@ https://www.youtube.com/watch?v=R1kQnTLccmU
 https://www.youtube.com/watch?v=EL--uZpzrPM
 https://www.youtube.com/watch?v=VazIRJSczIE
 https://www.youtube.com/watch?v=o80vzMmpFPQ
+https://www.youtube.com/watch?v=iMsGH4jumE0
 # Some other recommendations from names
 dynmk
 MrSuicideSheep
