@@ -270,6 +270,7 @@ https://www.youtube.com/watch?v=TJHGVu6UjnU
 https://www.youtube.com/watch?v=Q2WxWgDDPmc
 https://www.youtube.com/shorts/n4dxO26FiME
 https://www.youtube.com/watch?v=ct_ix_uCPAY
+https://www.youtube.com/watch?v=4YPrKmm1GSM
 https://www.youtube.com/watch?v=XLK5IbCU6nc
 https://www.youtube.com/watch?v=Leiyfqe28tM
 https://www.youtube.com/watch?v=W-_hNZpkgv8
@@ -512,6 +513,7 @@ https://www.youtube.com/watch?v=Et21QM-soMQ
 https://www.youtube.com/watch?v=UEY7TCvaLeY
 https://www.youtube.com/watch?v=vK3xgCmpXdk
 https://www.youtube.com/watch?v=KY44zvhWhp4
+https://www.youtube.com/watch?v=RGsXfC6s5mM
 https://www.youtube.com/watch?v=czaqssCwpT0
 https://www.youtube.com/watch?v=BOcZlIZRFyU
 https://www.youtube.com/watch?v=eJSik6ejkr0
@@ -616,6 +618,7 @@ https://www.youtube.com/watch?v=70XspGKI8kQ
 https://www.youtube.com/watch?v=lZIN8tQxNlw
 https://www.youtube.com/watch?v=FsWn9OGdAgQ
 https://www.youtube.com/watch?v=xwjQ2aVMAjA
+https://www.youtube.com/watch?v=DmNfT-B7nlA
 https://www.youtube.com/watch?v=RpmFVcMggZE
 https://www.youtube.com/watch?v=xl2zA25tsGM
 https://www.youtube.com/watch?v=U83WWQg9bW0
@@ -853,6 +856,7 @@ https://www.youtube.com/watch?v=FLXLvGy6zeQ
 https://www.youtube.com/watch?v=KYaOPkDi3ME
 https://www.youtube.com/watch?v=xlTOfVT4Sko
 https://www.youtube.com/watch?v=Y6-n3JRwmsE
+https://www.youtube.com/watch?v=K_9tX4eHztY
 https://www.youtube.com/watch?v=OjIYF5UHruo
 https://www.youtube.com/watch?v=apz43SuYnDY
 https://www.youtube.com/watch?v=0KSOMA3QBU0
@@ -1216,23 +1220,30 @@ https://www.youtube.com/watch?v=6rrnHx1xDLk
 https://www.youtube.com/watch?v=WJnvAwkyMMg
 https://www.youtube.com/watch?v=XZb0C8wUbpY
 https://www.youtube.com/watch?v=LWV6CvtMVP0
+https://www.youtube.com/watch?v=NUCY6yPiVMc
 https://www.youtube.com/watch?v=ExfmVW-aDGI
 https://www.youtube.com/watch?v=MH4Sm5LQX88
 https://www.youtube.com/watch?v=dKNotyDGpWE
 https://www.youtube.com/watch?v=5Rw6CbUeEQM
+https://www.youtube.com/watch?v=SLsTskih7_I
 https://www.youtube.com/watch?v=HH31tHE3Piw
 https://www.youtube.com/watch?v=C6_NYSVadrM
 https://www.youtube.com/watch?v=WwH9Dq-xv4o
 https://www.youtube.com/watch?v=66zpUxtMb1s
+https://www.youtube.com/watch?v=avFq9errZCk
 https://www.youtube.com/watch?v=Hqs7aKR0rr0
 https://www.youtube.com/watch?v=AKXrfw5kfCo
 https://www.youtube.com/shorts/FFTBWoQ_X88
 https://www.youtube.com/watch?v=SPiEeoYWhr8
+https://www.youtube.com/watch?v=wzMrK-aGCug
 https://www.youtube.com/watch?v=rfUMHN2Bgdk
 https://www.youtube.com/watch?v=hwuo2EY0qhk
 https://www.youtube.com/watch?v=l5t9IXtTr6g
+https://www.youtube.com/watch?v=bSfpSOBD30U
 https://www.youtube.com/watch?v=g9pkKnPkksM
+https://www.youtube.com/watch?v=i_kF4zLNKio
 https://www.youtube.com/watch?v=vCGYOX3YNuM
+https://www.youtube.com/watch?v=qdsTUfDTEhQ
 https://www.youtube.com/watch?v=59_7B54Hq38
 https://www.youtube.com/watch?v=kWTQTl3QtMY
 https://www.youtube.com/watch?v=VVnESQXxoiw
@@ -1243,7 +1254,10 @@ https://www.youtube.com/watch?v=EL--uZpzrPM
 https://www.youtube.com/watch?v=VazIRJSczIE
 https://www.youtube.com/watch?v=o80vzMmpFPQ
 https://www.youtube.com/watch?v=iMsGH4jumE0
-# Some other recommendations from names
+https://www.youtube.com/watch?v=vIaH35-MLsk
+
+Those are examples of music I enjoyed at one point and those can redirect through the recommendation system of youtube to other sounds I could enjoy. The best music is discovered and thus has yet to come…
+# Some other recommendations based on names
 dynmk
 MrSuicideSheep
 dreamscape
