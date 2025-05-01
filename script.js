@@ -21,7 +21,7 @@ IOS app - Dark Noise
 [izzamuzzic - Slow Mix (Slowed to Perfection Mix 2020)](https://www.youtube.com/watch?v=vCGYOX3YNuM&t=1062s)
 `
 const music_file = `
-#music #list 
+#music #list #web 
 
 # Pleasant music
 
@@ -286,6 +286,7 @@ https://www.youtube.com/shorts/n4dxO26FiME
 https://www.youtube.com/watch?v=ct_ix_uCPAY
 https://www.youtube.com/watch?v=urh2wdeuiWw
 https://www.youtube.com/watch?v=LceUbSZD_vk
+https://www.youtube.com/watch?v=XL-8MqMgw3s
 https://www.youtube.com/watch?v=4YPrKmm1GSM
 https://www.youtube.com/watch?v=XLK5IbCU6nc
 https://www.youtube.com/watch?v=Leiyfqe28tM
@@ -452,6 +453,7 @@ https://www.youtube.com/watch?v=79LgGGKOW8M
 https://www.youtube.com/watch?v=k7H2C5L8X7I
 https://www.youtube.com/watch?v=HXZUwovs8Rc
 https://www.youtube.com/watch?v=VPZP23mCnWQ
+https://www.youtube.com/watch?v=4L1xFk_sGms
 https://www.youtube.com/watch?v=Q_g3gp3PwIc
 https://www.youtube.com/watch?v=h9CPZ96XZeY
 https://www.youtube.com/watch?v=9dOzcVLIn6A
@@ -781,6 +783,7 @@ https://www.youtube.com/watch?v=8yIyY-Bpv2c
 https://www.youtube.com/watch?v=t61T0Wu7slg
 https://www.youtube.com/watch?v=JpJ3U889WRg
 https://www.youtube.com/watch?v=-DdIl9dagCg
+https://www.youtube.com/watch?v=dpZM1xf8m9I
 https://www.youtube.com/watch?v=HOIUA1DOhnE
 https://www.youtube.com/watch?v=vYuSRTDOa8c
 https://www.youtube.com/watch?v=HFPFEiCT7qk
@@ -908,6 +911,7 @@ https://www.youtube.com/watch?v=8SeRU_ZPDkE
 https://www.youtube.com/watch?v=u1wq9zR001Y
 https://www.youtube.com/watch?v=CVtbY-wDYKM
 https://www.youtube.com/watch?v=J5oZ80Daduc
+https://www.youtube.com/watch?v=JXRN_LkCa_o
 https://www.youtube.com/watch?v=9Op_lvWf7rY
 https://www.youtube.com/watch?v=YB-TftMEv7Q
 https://www.youtube.com/watch?v=1tOYpda990w
@@ -1062,6 +1066,7 @@ https://www.youtube.com/watch?v=BVomQtrtMTM
 https://www.youtube.com/watch?v=T7K0pZ9tGi4
 https://www.youtube.com/watch?v=Ywq6FMLbWH4
 https://www.youtube.com/watch?v=tD_-d87uO7k
+https://www.youtube.com/watch?v=sTBivfkdrlc
 https://www.youtube.com/watch?v=haqjCg5qsDk
 https://www.youtube.com/watch?v=dbJ55eUlw3A
 https://www.youtube.com/watch?v=8WGtrYfBcnA
@@ -1300,11 +1305,13 @@ https://www.youtube.com/watch?v=hwuo2EY0qhk
 https://www.youtube.com/watch?v=l5t9IXtTr6g
 https://www.youtube.com/watch?v=bSfpSOBD30U
 https://www.youtube.com/watch?v=liA4o-PFLro
+https://www.youtube.com/watch?v=oorVWW9ywG0
 https://www.youtube.com/watch?v=dlST02hN4ds
 https://www.youtube.com/watch?v=bcWrT9uggxs
 https://www.youtube.com/watch?v=vfUFTHAQKeg
 https://www.youtube.com/watch?v=i_kF4zLNKio
 https://www.youtube.com/watch?v=qdsTUfDTEhQ
+https://www.youtube.com/watch?v=1BWb0WBQXjw
 https://www.youtube.com/watch?v=59_7B54Hq38
 https://www.youtube.com/watch?v=kWTQTl3QtMY
 https://www.youtube.com/watch?v=VVnESQXxoiw
@@ -1317,67 +1324,7 @@ https://www.youtube.com/watch?v=o80vzMmpFPQ
 https://www.youtube.com/watch?v=vIaH35-MLsk
 https://www.youtube.com/watch?v=MMVREfVXY5E
 https://www.youtube.com/watch?v=L9PtgDnIlY4
-https://www.youtube.com/watch?v=yG3ie9a1pPk
-
-
-Those are examples of music I enjoyed at one point and those can redirect through the recommendation system of youtube to other sounds I could enjoy. The best music is discovered and thus has yet to come…
-# Some other recommendations based on names
-dynmk
-MrSuicideSheep
-dreamscape
-Eminem
-Lil peep
-xxxtentacion
-2Scratch
-Black Atlas
-izzamusic
-Always never
-Breathe
-Prince of falls
-Aesthetic vibes
-Скриптонит
-letyoudown
-Lund
-Plaza
-pre kai ro
-\$uicideBoy\$
-SickickMusic
-Brennan Savage
-Ashkidd
-Neffex
-Chase Atlantic
-Lefa
-Damso
-Enrique Iglesias
-Lycos
-Izaid
-YUZMV
-Columbine
-PLK
-Lasco
-Sneazzy
-Nekfeu
-Django
-Freeze Corleone
-The Neighbourhood
-Witt Lowry
-Aaryan Shah
-Machine Gun Kelly
-Illenium MrMomMusic
-Gangster musicline
-Lana Del Ray
-snegovik
-Juice WRLD
-LAYLOW
-MGK
-Arusik Petrosyan
-Rauf & Faik
-zane98
-Coldsteeze
-Izzamuzzic
-BANKS
-Shilow Dynasty
-YouTube automated recommendations for music...`;
+https://www.youtube.com/watch?v=yG3ie9a1pPk`;
 let music_list = []
 let engaged_study_list = []
 let focused_study_list = []
