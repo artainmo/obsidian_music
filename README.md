@@ -15,3 +15,7 @@ Personal project. Git repository synchronized with obsidian submodule to take up
 9. Use css to improve looks of website.
 10. Create a button to go back to previous song.
 11. Dislay song title during ads to know what song you are waiting for.
+
+## TODO
+
+- [ ] _Youtube shorts_ keep turning in a loop.
