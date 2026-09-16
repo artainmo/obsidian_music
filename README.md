@@ -20,3 +20,4 @@ Personal project. Git repository synchronized with obsidian submodule to take up
 
 - [ ] _Youtube shorts_ keep turning in a loop.
 - [ ] Long videos can have ads in the middle of it not be muted because only the ads at the start of the videos are muted.
+- [ ] The randomness is not great. I believe that, if it is based on time, on certain days/months the supposed randomness will privilege certain songs due to the hour/minute/second then becoming the only differentiating factor.
