@@ -19,3 +19,4 @@ Personal project. Git repository synchronized with obsidian submodule to take up
 ## TODO
 
 - [ ] _Youtube shorts_ keep turning in a loop.
+- [ ] Long videos can have ads in the middle of it not be muted because only the ads at the start of the videos are muted.
